@@ -1,6 +1,13 @@
+@import 'grid';
 @import 'variables';
 
-body {
-  background: $light-grey;
-  background-image: url(../assets/orangecat.jpg);
+header {
+	height: 5em;
+  	background-image: url(../assets/inline.png);
+  	background-repeat: no-repeat;
+  	background-size: contain;
+}
+
+h2 {
+	color: red;
 }
