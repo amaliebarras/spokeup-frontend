@@ -36,9 +36,7 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   background-color: red;
 }
 
-/* larger grid */
-
-@media (min-width: 650px) {
+/*grid*/
 
   .col-1 {
     @include grid (1);
@@ -80,7 +78,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
   .col-12 {
     @include grid(12);
   }
-}
+
+/*styles*/
 
 .rate {
   display: none;
@@ -97,4 +96,19 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 
 .hidden-wrapper {
   display: none;
+}
+
+/*medium breakpoint*/
+
+@media (min-width: 650px) {
+  section {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+/*large breakpoint*/
+
+@media (min-width: 950px) {
+
 }
