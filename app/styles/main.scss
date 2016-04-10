@@ -96,6 +96,15 @@ section {
 		border-radius: 4px 4px 0px 0px;
 		}
 
+.ratePage {
+	.active {
+		background-color: $active-color;
+		&:hover {
+			background-color: $active-color;
+		}
+	}
+}
+
 .rating {
 	padding: 0.25em 0em;
 	h3 {
@@ -132,7 +141,27 @@ margin: 0 0 0 0.5em;
 			}
 }
 
+.dropdown {
+	text-align: center;
+	margin: 1em 0em;
+	padding: 0.5em;
+	h3 {
+		font-size: 1.5em;
+		margin: 0;
+	}
+	i {
+		font-size: 2em;
+		margin-left: 0.5em;
+	}
+}
+
+
 .radiobuttons {
+	i {
+		padding-top: 10px;
+		font-size: 1.5em;
+		padding: 0.5em 0.5em;
+	}
 	text-align: center;
 	div {
 	  margin:0 0 0.75em 0;
@@ -176,13 +205,35 @@ margin: 0 0 0 0.5em;
 
 .directions {
 	padding: 0.5em 0;
+	h3 {
+		font-size: 1.5em;
+	}
+}
+
+.suggestPage {
+	h5 {
+		text-align: left;
+		text-transform: uppercase;
+		font-family: 'Open Sans';
+	}
+	.active {
+		background-color: $active-color;
+		&:hover {
+			background-color: $active-color;
+		}
+	}
+}
+
+.tellus {
+	text-align: center;
 }
 
 .footer {
+	font-size: 1.25em;
 	border-radius: 0em;
 	background-color: $dormant-color;
 	text-align: center;
-	padding: 0.5em;
+	padding: 0.25em;
 	&:hover {
 		background-color: $accent-royal;
 		}
