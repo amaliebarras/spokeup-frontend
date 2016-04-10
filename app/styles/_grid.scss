@@ -14,8 +14,8 @@ $ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
 }
 
 .col {
-  height: 2em;
-  background-color: #bada55;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
 }
 
 .row {

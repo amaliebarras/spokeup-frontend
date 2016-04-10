@@ -6,194 +6,437 @@
     <title>SpokeUP!</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://use.typekit.net/eae1gkv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
 <body>
 <header>
   <div class="row">
-    <div class="col col-4">
-        <div class="logo">HEY</div>
-    </div>
-    <div class="col col-8">
-        <h1 class="headline">
-  			<span class = "location"><h2>Austin, TX</h2></span>
-  		</h1>
-    </div>
+  	    <div class = "header-wrapper">
+    		<div class="col col-4">
+	        	<div class="logo"></div>
+	    	</div>
+		    <div class="col col-8">
+		    	<div class = "headline-wrapper">
+		  				<h1>neighborhood bikeability scores in</h1>
+		  				<h2>
+		  					<span>
+		  						<i class="fa fa-map-marker"></i>
+							</span>
+							<span class = "location">
+								Austin, TX
+							</span>
+						</h2>
+		  		</div>
+		    </div>
+		</div>
   </div>
 </header>
 <section class = "nav">
 	<div class="row">
 	    <div class="col col-4">
-	    	<div class = "navbutton hoodButton">
-	        view
+	    	<div class = "navbutton hoodButton  active">
+	    		<i class="fa fa-list-ul"></i>
 	        </div>
+	        <h3 class = "viewlabel">VIEW</h3>
 	    </div>
 	    <div class="col col-4">
 	    	<div class = "navbutton rateButton">
-	        rate
+	    		<i class="fa fa-check-circle"></i>
 	        </div>
+	        <h3 class = "ratelabel">RATE</h3>
 	    </div>
 	    <div class="col col-4">
 	    	<div class = "navbutton suggestButton">
-	        suggest
+	    		<i class="fa fa-comment"></i>
 	        </div>
+	        <h3 class = "ratelabel">SUGGEST</h3>
 	    </div>
 	</div>
 </section>
 <section class="viewPage">
 	<div class="row">
-	    <div class="col col-4">
-	        sort by
-	    </div>
-	    <div class="col col-8">
-	        dropdown
-	    </div>
+		<div class = "formWrapper">
+		    <div class="col col-12">
+				<form action="#selectMetric">
+				  <span class = "inlinethings">
+				      <label for="selectMetricExample">
+				        <h3>SORT BY </h3>
+				      </label>
+				  </span>
+				  <span class = "inlinethings dropdown">
+				    <select id="selectMetricExample" class="selectMetric">
+				      <option value="">EASE</option>
+				      <option value="1">AMENITIES</option>
+				      <option value="2">SAFETY</option>
+				    </select>
+				  </span>
+				</form>
+		    </div>
+		</div>
 	</div>
     <div class="row">
-        <div class="col-12">
-            <div class="tile">
-                Tile 1
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="active-wrapper">
-                <div class="row">
-                    <div class="col-6">
-                        rating
-                    </div>
-                    <div class="col-6">
-                        button
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        image
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="description-wrapper">
-                            description
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="tile">
-                Tile 2
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="hidden-wrapper">
-                <div class="row">
-                    <div class="col-6">
-                        rating
-                    </div>
-                    <div class="col-6">
-                        button
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        image
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="description-wrapper">
-                            description
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="tile">
-                Tile 3
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="hidden-wrapper">
-                <div class="row">
-                    <div class="col-6">
-                        rating
-                    </div>
-                    <div class="col-6">
-                        button
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        image
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="description-wrapper">
-                            description
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tile">
-                Tile 4
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="hidden-wrapper">
-                <div class="row">
-                    <div class="col-6">
-                        rating
-                    </div>
-                    <div class="col-6">
-                        button
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        image
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="description-wrapper">
-                            description
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tile">
-                Tile 5
-            </div>
-        </div>
-        <div class="col-12">
-            <div class="hidden-wrapper">
-                <div class="row">
-                    <div class="col-6">
-                        rating
-                    </div>
-                    <div class="col-6">
-                        button
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        image
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="description-wrapper">
-                            description
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="loadmore">
-                Load More
-            </div>
-        </div>
+    	<div class = "entry1">
+	        <div class="col-12">
+	            <div class="tile active">
+	            	<span class = "inline-things">
+	            	<i class="fa fa-angle-down"></i>
+	            	</span>
+	            	<span class = "inline-things">
+	                <h3 class = "city westlake">Westlake</h3>
+	                </span>
+	            </div>
+	        </div>
+	        <div class="col-12">
+	            <div class="active-wrapper">
+	                <div class="row">
+	                    <div class="col-6">
+	                        <div class = "rating-wrapper">
+		                        <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-smile-o"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">EASE
+					                <span class = "ratingScore">3.0</span></h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-coffee"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">AMENITIES
+					                <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-ambulance"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">SAFETY
+									 <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					               
+					            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-6">
+	                        <div class = "neighborhoodphoto">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                         <a href = "#">
+	                         <div class = "cta-button">
+	                         	<h4>Add Your Rating</h4>
+	                         </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <div class="description-wrapper">
+	                            <p class = "description">West Lake Hills is a city in Travis County, Texas, United States. The population was 3,063 at the 2010 census. The city of West lake Hills is a suburb of Austin, located on the west side of Austin.</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class = "entry2">
+	        <div class="col-12">
+	            <div class="tile">
+	            	<span class = "inline-things collapsed">
+	            	<i class="fa fa-angle-right"></i></i>
+	            	</span>
+	            	<span class = "inline-things">
+	                <h3 class = "city westlake">Hyde Park</h3>
+	                </span>
+	            </div>
+	        </div>
+	        <div class="col-12">
+	            <div class="hidden-wrapper">
+	                <div class="row">
+	                    <div class="col-6">
+	                        <div class = "rating-wrapper">
+		                        <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-smile-o"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">EASE
+					                <span class = "ratingScore">3.0</span></h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-coffee"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">AMENITIES
+					                <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-ambulance"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">SAFETY
+									 <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					               
+					            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-6">
+	                        <div class = "neighborhoodphoto">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <a href = "#"><div class = "cta-button">
+	                        	<h4>Add Your Rating</h4>
+	                        </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <div class="description-wrapper">
+	                            <p class = "description">West Lake Hills is a city in Travis County, Texas, United States. The population was 3,063 at the 2010 census. The city of West lake Hills is a suburb of Austin, located on the west side of Austin.</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class = "entry2">
+	        <div class="col-12">
+	            <div class="tile">
+	            	<span class = "inline-things collapsed">
+	            	<i class="fa fa-angle-right"></i></i>
+	            	</span>
+	            	<span class = "inline-things">
+	                <h3 class = "city westlake">Hyde Park</h3>
+	                </span>
+	            </div>
+	        </div>
+	        <div class="col-12">
+	            <div class="hidden-wrapper">
+	                <div class="row">
+	                    <div class="col-6">
+	                        <div class = "rating-wrapper">
+		                        <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-smile-o"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">EASE
+					                <span class = "ratingScore">3.0</span></h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-coffee"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">AMENITIES
+					                <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-ambulance"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">SAFETY
+									 <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					               
+					            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-6">
+	                        <div class = "neighborhoodphoto">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <a href = "#"><div class = "cta-button">
+	                        	<h4>Add Your Rating</h4>
+	                        </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <div class="description-wrapper">
+	                            <p class = "description">West Lake Hills is a city in Travis County, Texas, United States. The population was 3,063 at the 2010 census. The city of West lake Hills is a suburb of Austin, located on the west side of Austin.</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class = "entry2">
+	        <div class="col-12">
+	            <div class="tile">
+	            	<span class = "inline-things collapsed">
+	            	<i class="fa fa-angle-right"></i></i>
+	            	</span>
+	            	<span class = "inline-things">
+	                <h3 class = "city westlake">Hyde Park</h3>
+	                </span>
+	            </div>
+	        </div>
+	        <div class="col-12">
+	            <div class="hidden-wrapper">
+	                <div class="row">
+	                    <div class="col-6">
+	                        <div class = "rating-wrapper">
+		                        <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-smile-o"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">EASE
+					                <span class = "ratingScore">3.0</span></h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-coffee"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">AMENITIES
+					                <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-ambulance"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">SAFETY
+									 <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					               
+					            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-6">
+	                        <div class = "neighborhoodphoto">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <a href = "#"><div class = "cta-button">
+	                        	<h4>Add Your Rating</h4>
+	                        </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <div class="description-wrapper">
+	                            <p class = "description">West Lake Hills is a city in Travis County, Texas, United States. The population was 3,063 at the 2010 census. The city of West lake Hills is a suburb of Austin, located on the west side of Austin.</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class = "entry2">
+	        <div class="col-12">
+	            <div class="tile">
+	            	<span class = "inline-things collapsed">
+	            	<i class="fa fa-angle-right"></i></i>
+	            	</span>
+	            	<span class = "inline-things">
+	                <h3 class = "city westlake">Hyde Park</h3>
+	                </span>
+	            </div>
+	        </div>
+	        <div class="col-12">
+	            <div class="hidden-wrapper">
+	                <div class="row">
+	                    <div class="col-6">
+	                        <div class = "rating-wrapper">
+		                        <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-smile-o"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">EASE
+					                <span class = "ratingScore">3.0</span></h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-coffee"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">AMENITIES
+					                <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					            </div>
+					            <div class = "rating">
+			                        <span class = "inline-things">
+					            	<i class="fa fa-ambulance"></i>
+					            	</span>
+					            	<span class = "inline-things">
+					                <h3 class = "ratingName">SAFETY
+									 <span class = "ratingScore">3.0</span>
+					                </h3>
+					                </span>
+					               
+					            </div>
+	                        </div>
+	                    </div>
+	                    <div class="col-6">
+	                        <div class = "neighborhoodphoto">
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <a href = "#"><div class = "cta-button">
+	                        	<h4>Add Your Rating</h4>
+	                        </div>
+	                        </a>
+	                    </div>
+	                </div>
+	                <div class="row">
+	                    <div class="col-12">
+	                        <div class="description-wrapper">
+	                            <p class = "description">West Lake Hills is a city in Travis County, Texas, United States. The population was 3,063 at the 2010 census. The city of West lake Hills is a suburb of Austin, located on the west side of Austin.</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+    <div class="tile loadmore ">
+        <h3>Load More</h3>
     </div>
 </div>
 </section>
@@ -204,40 +447,148 @@
                 dropdown
             </div>
         </div>
+    </div>
         <div class="row">
-            <div class="col col-6">
+            <div class="col col-12">
                 <div class="ease">
-                    ease
+                    <h5>ease</h5>
                 </div>
             </div>
-            <div class="col col-6">
+            <div class="col col-12">
                 <div class="radiobuttons">
-                    radiobuttons
+                    <span class = inline-things>
+					  <div>
+					  <input type="radio" id="radio01" name="radio" />
+					  <label for="radio01"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio02" name="radio" />
+					   <label for="radio02"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio03" name="radio" />
+					   <label for="radio03"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio04" name="radio" />
+					   <label for="radio04"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio05" name="radio" />
+					   <label for="radio05"><span></span></label>
+					  </div>
+					</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col col-6">
-                <div class="ease">
-                    amenities
+            <div class="col col-12">
+                <div class="amenities">
+                    <h5>amenities</h5>
                 </div>
             </div>
-            <div class="col col-6">
+            <div class="col col-12">
                 <div class="radiobuttons">
-                    radiobuttons
+                    <span class = inline-things>
+					  <div>
+					  <input type="radio" id="radio01" name="radio" />
+					  <label for="radio01"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio02" name="radio" />
+					   <label for="radio02"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio03" name="radio" />
+					   <label for="radio03"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio04" name="radio" />
+					   <label for="radio04"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio05" name="radio" />
+					   <label for="radio05"><span></span></label>
+					  </div>
+					</span>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col col-6">
-                <div class="ease">
-                    ease
+            <div class="col col-12">
+                <div class="safety">
+                    <h5>safety</h5>
                 </div>
             </div>
-            <div class="col col-6">
+            <div class="col col-12">
                 <div class="radiobuttons">
-                    radiobuttons
+                    <span class = inline-things>
+					  <div>
+					  <input type="radio" id="radio01" name="radio" />
+					  <label for="radio01"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio02" name="radio" />
+					   <label for="radio02"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio03" name="radio" />
+					   <label for="radio03"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio04" name="radio" />
+					   <label for="radio04"><span></span></label>
+					  </div>
+					</span>
+
+					<span class = inline-things>
+					  <div>
+					   <input type="radio" id="radio05" name="radio" />
+					   <label for="radio05"><span></span></label>
+					  </div>
+					</span>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <a href = "#"><div class = "cta-button">
+                	<h4>Submit</h4>
+                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -245,22 +596,24 @@
 <section class="suggestPage">
     <div class="row">
         <div class="col col-12">
-            <div class="directions">
-                directions
+            <div class="directions tile active">
+            <h3>Don’t see your hood? Let us know & we’ll review and add it!</h3>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col col-12">
             <div class="hoodname">
-                name of hood
+                <input placeholder="Neighborhood">
+                </input>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col col-12">
             <div class="hooddescription">
-                description of hood
+                <textarea> Please add a brief description of the neighborhood
+                </textarea>
             </div>
         </div>
     </div>
@@ -269,14 +622,18 @@
         </div>
         <div class="col col-6">
             <div class="tellus">
-                tell us buttn
+                <div class = "cta-button">
+                <h4> Tell Us</h4>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<a href = "#"><div class="footer">
-    THIS IS A FOOTER
-</div></a>
+<a href = "#">
+	<div class="footer">
+    	<h3>LOCAL BIKING MAPS & RESOURCES</h3>
+	</div>
+	</a>
 
 </body>
 
